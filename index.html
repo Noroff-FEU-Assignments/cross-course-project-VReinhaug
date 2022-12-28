@@ -1,20 +1,99 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My first website</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">First off, I would advise my potential client to enable HTTPS instead of just HTTP, as HTTPS will encrypt the communication between the server and the client by using either TLS or SSL. I would also advise them to have a password policy, where they encourage strong passwords and use a two-factor authenticator. 
-    <br></br>
-    I would encourage the use of a CI/CD tool which uses an automatic process which runs security checks to changes made to codes before they enter the codebase. This will help detect any vulnerabilities early in the process.
-    <br></br>   
-    Sanitization of data is also something I would advise them to do. This means that the data coming in to the system, either from users, APIs or other web services is modified or filtered to prevent malicious code to enter the system. You can do this manually, but there are many third-party solutions you can use. When using a third-party provider, you should always use those who are well known and trustworthy. 
-    <br></br>
-    At last I would encourage them to keep up with the OWASP list, which gives an overview if the most “popular” web security threats and offer guidance for improvements of vulnerabilities. 
-    </p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Rainydays</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head> 
+<body>
+  <header>
+    <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo for Rainydays"></a>
+    <p>search</p>
+    <p>profile</p>
+    <p>favourites</p>
+    <p>shopping cart</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</li></a>
+        <li><a href="jackets/womens.html">Women's jackets</li></a>
+        <li><a href="#">Men's jackets</li></a>
+        <li><a href="about.html">About</li></a>
+        <li><a href="contact.html">Contact</li></a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <Section>
+      <div>
+        <a href="jackets/womens.html"><img src="images/Hanne_Sether_Lilleberg1.jpeg" alt="Woman wearing the Hanne jacket"></a>
+        <a href="jackets/womens.html" class="cta-button">Shop women's jackets</a>
+      </div>
+      <div>
+        <a href="jackets/mens.html"><img src="images/Magnus_Sether_Lilleberg1.jpeg" alt="Man wearing the Magnus jacket"></a>
+        <a href="jackets/mens.html" class="cta-button">Shop men's jackets</a>
+      </div>
+    </Section>
+    <section>
+      <img src="images/Cecilie_Feyling4.jpeg" alt="Two women cross country skiing in the Ronja jacket">
+      <p>Our bestseller Ronja</p>
+      <p>Now on sale!</p>
+    </section>
+    <section>
+      <h1>Share your #Rainydays</h1>
+      <section>
+        <div>
+          <img src="images/Ronja_Kjelstad3.jpeg" alt="Woman camping in the Ronja jacket">
+        </div>
+        <div>
+          <h2>Ronja</h2>
+          <img src="images/RainyDays_Jacket2.png" alt="Ronja jacket">
+          <a href="#" class="cta-button">Shop Ronja</a>
+        </div>
+      </section>
+      <section>
+        <div>
+          <img src="images/Magnus_Sether_Lilleberg4.jpeg" alt="Man rock climbing in the Magnus jacket">
+        </div>
+        <div>
+          <h2>Magnus</h2>
+          <img src="images/RainyDays_Jacket4.png" alt="Magnus jacket">
+          <a href="#" class="cta-button">Shop Magnus</a>
+        </div>
+      </section>
+      <section>
+        <div>
+          <img src="images/Cecilie_Feyling2.jpeg" alt="Woman hiking in the Cecilie jacket">
+        </div>
+        <div>
+          <h2>Cecilie</h2>
+          <img src="images/RainyDays_Jacket1.png" alt="Cecilie jacket">
+          <a href="#" class="cta-button">Shop Cecilie</a>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <h2>Follow us</h2>
+      <p>Facebook</p>
+      <p>Instagram</p>
+      <p>TikTok</p>
+    </section>
+    <section>
+      <h2>Contact us</h2>
+      <div>
+        <p>Visit our outlet at</p>
+        <p>Gategata 20</p>
+        <p>0011 Oslo</p>
+      </div>
+      <div>
+        <p>Phone: +47 12345678</p>
+        <p>Email: contact@rainydays.com</p>
+        <p>Office hours: Mon-Fri 09:00-16:00</p>
+      </div>
+    </section>
+  </footer>
+</body>
 </html>
