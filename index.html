@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Palanquin:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/84a2433f18.js" crossorigin="anonymous"></script>
 </head> 
 <body>
   <header>
@@ -18,29 +19,29 @@
     <p>profile</p>
     <p>favourites</p>
     <p>shopping cart</p>
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</li></a>
-        <li><a href="jackets/womens.html">Women's jackets</li></a>
-        <li><a href="#">Men's jackets</li></a>
-        <li><a href="about.html">About</li></a>
-        <li><a href="contact.html">Contact</li></a>
-      </ul>
+      <a href="index.html">Home</li></a>
+      <a href="Clothing/Womens/jackets.html">Women's jackets</li></a>
+      <a href="#">Men's jackets</li></a>
+      <a href="about.html">About</li></a>
+      <a href="contact.html">Contact</li></a>
     </nav>
   </header>
   <main>
-    <Section>
+    <Section class="main-products">
       <div>
-        <a href="jackets/womens.html"><img src="images/Hanne_Sether_Lilleberg1.jpeg" alt="Woman wearing the Hanne jacket"></a>
+        <a href="jackets/womens.html"><img src="images/Hanne_Sether_Lilleberg1.jpeg" alt="Woman wearing the Hanne jacket" class="main-products_image"></a>
         <a href="jackets/womens.html" class="cta-button">Shop women's jackets</a>
       </div>
       <div>
-        <a href="jackets/mens.html"><img src="images/Magnus_Sether_Lilleberg1.jpeg" alt="Man wearing the Magnus jacket"></a>
+        <a href="jackets/mens.html"><img src="images/Magnus_Sether_Lilleberg1.jpeg" alt="Man wearing the Magnus jacket" class="main-products_image"></a>
         <a href="jackets/mens.html" class="cta-button">Shop men's jackets</a>
       </div>
     </Section>
-    <section>
-      <img src="images/Cecilie_Feyling4.jpeg" alt="Two women cross country skiing in the Ronja jacket">
+    <section class="banner">
+      <img src="images/Cecilie_Feyling4.jpeg" alt="Two women cross country skiing in the Ronja jacket" class="banner_image">
       <p>Our bestseller Ronja</p>
       <p>Now on sale!</p>
     </section>

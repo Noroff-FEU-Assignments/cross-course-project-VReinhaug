@@ -1,20 +1,76 @@
 body{
     background-color: #a8b8b8;
+    font-family: "Palanquin", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav, 
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
 }
 
 nav {
     background-color: #0A3540;
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 30px;
 }
 
-nav a{
+nav a {
     color: #ffffff;
+    display: block;
+    padding: 10px 20px;
+}
+
+@media (min-width: 600px){
+    nav {
+        display:block;
+        position: static;
+    }
+    .hamburger-icon{
+        display:none;
+    }
+    nav a{
+        display: inline-block;
+    }
 }
 
 .cta-button{
     background-color: #0A3540;
     color: #ffffff;
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h1{
+    font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
 footer{
     background-color: #0A3540;
     color: #ffffff;
+}
+
+/* Home page */
+
+.main-products_image{
+    border-radius: 30px;
+}
+
+.banner{
+    font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Checkout page */
+
+.form__input{
+    display: block;
+    border: solid 1px #0A3540;
 }
