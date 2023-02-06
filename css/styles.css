@@ -1,6 +1,10 @@
 body{
     background-color: #a8b8b8;
     font-family: "Palanquin", Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 nav, 
@@ -24,6 +28,7 @@ nav a {
     color: #ffffff;
     display: block;
     padding: 10px 20px;
+    text-transform: uppercase;
 }
 
 @media (min-width: 600px){
@@ -39,11 +44,6 @@ nav a {
     }
 }
 
-.cta-button{
-    background-color: #0A3540;
-    color: #ffffff;
-    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-}
 
 h1{
     font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
@@ -58,14 +58,79 @@ footer{
     color: #ffffff;
 }
 
-/* Home page */
-
-.main-products_image{
-    border-radius: 30px;
+/* Links */
+a{
+    text-decoration: none;
 }
 
-.banner{
+.current{
+    text-decoration: underline;
+}
+
+.cta-button{
+    background-color: #0A3540;
+    color: #ffffff;
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+
+/* Home page */
+
+.main-products {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.main-products > * {
+    flex: 1;
+}
+
+.main-products_image{
+    width: 100%;
+    border-radius: 30px;
+    border: 6px solid #0A3540;
+    margin: auto;
+}
+
+.banner {
     font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carousel {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    gap: 50px;
+}
+
+.carousel > * {
+    flex: 1;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+/* Product page */
+
+.product-view {
+    background-color: #ffffff;
+    display: flex;
+    max-width: 1000px;
+    margin: 10px 10px 10px 0px;
+}
+
+.product-view > * {
+    flex: 1;
+}
+
+.product-view img {
+    width: 100%;
 }
 
 /* Checkout page */
