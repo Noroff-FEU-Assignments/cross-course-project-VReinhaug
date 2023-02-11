@@ -15,10 +15,13 @@
 <body>
   <header>
     <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo for Rainydays"></a>
-    <p>search</p>
-    <p>profile</p>
-    <p>favourites</p>
-    <p>shopping cart</p>
+    <section>
+      <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+      <input type="text" name="search" id="search">
+    </section>
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-bag-shopping"></i>
     <input type="checkbox" id="menu-checkbox">
     <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
     <nav>
@@ -44,11 +47,11 @@
         <a href="jackets/mens.html" class="cta-button">Shop men's jackets</a>
       </div>
     </Section>
-    <section class="banner">
-      <img src="images/Cecilie_Feyling4.jpeg" alt="Two women cross country skiing in the Ronja jacket" class="banner_image">
-      <p>Our bestseller Ronja</p>
-      <p>Now on sale!</p>
-    </section>
+    <div class="banner">
+      <img src="images/Cecilie_Feyling4.jpeg" alt="Two women cross country skiing in the Ronja jacket" class="banner__image">
+      <p class="banner__text1">Our bestseller Ronja</p>
+      <p class="banner__text2">Now on sale!</p>
+    </div>
     <section>
       <h1>Share your #Rainydays</h1>
       <section class="carousel">
@@ -57,7 +60,7 @@
         </div>
         <div>
           <h2>Ronja</h2>
-          <img src="images/RainyDays_Jacket2.png" alt="Ronja jacket">
+          <img src="images/RainyDays_Jacket2.png" alt="Ronja jacket" class="carousel__product">
           <a href="#" class="cta-button">Shop Ronja</a>
         </div>
       </section>
@@ -67,7 +70,7 @@
         </div>
         <div>
           <h2>Magnus</h2>
-          <img src="images/RainyDays_Jacket4.png" alt="Magnus jacket">
+          <img src="images/RainyDays_Jacket4.png" alt="Magnus jacket" class="carousel__product">
           <a href="#" class="cta-button">Shop Magnus</a>
         </div>
       </section>
@@ -77,7 +80,7 @@
         </div>
         <div>
           <h2>Cecilie</h2>
-          <img src="images/RainyDays_Jacket1.png" alt="Cecilie jacket">
+          <img src="images/RainyDays_Jacket1.png" alt="Cecilie jacket" class="carousel__product">
           <a href="#" class="cta-button">Shop Cecilie</a>
         </div>
       </section>

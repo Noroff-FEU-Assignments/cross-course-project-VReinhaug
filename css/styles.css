@@ -22,6 +22,7 @@ nav {
     position: absolute;
     top: 0px;
     left: 30px;
+    
 }
 
 nav a {
@@ -31,22 +32,10 @@ nav a {
     text-transform: uppercase;
 }
 
-@media (min-width: 600px){
-    nav {
-        display:block;
-        position: static;
-    }
-    .hamburger-icon{
-        display:none;
-    }
-    nav a{
-        display: inline-block;
-    }
-}
-
 
 h1{
     font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 h2{
@@ -98,7 +87,32 @@ a{
 
 .banner {
     font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
+     position: relative;
 }
+
+.banner__text1 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 2em;
+    color: #0A3540;
+}
+
+.banner__text2 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    font-size: 2em;
+    color: #0A3540;
+    text-transform: uppercase;
+}
+
+.banner__image {
+    max-width: 100%;
+    border-top: 6px solid #0A3540;
+    border-bottom: 6px solid #0A3540;
+}
+
 
 .carousel {
     display: flex;
@@ -114,6 +128,10 @@ a{
 
 .carousel img {
     width: 100%;
+}
+
+.carousel__product {
+    background-color: #ffffff;
 }
 
 /* Product page */
@@ -138,4 +156,17 @@ a{
 .form__input{
     display: block;
     border: solid 1px #0A3540;
+}
+
+@media (min-width: 600px){
+    nav {
+        display:block;
+        position: static;
+    }
+    .hamburger-icon{
+        display:none;
+    }
+    nav a{
+        display: inline-block;
+    }
 }
