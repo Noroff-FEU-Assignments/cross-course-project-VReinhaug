@@ -555,7 +555,7 @@ a {
 .delivery {
     display: grid;
     align-items: baseline;
-    grid-auto-columns: max-content;
+    grid-template-columns: auto 1fr;
     gap: 0em 3em;
 }
 
