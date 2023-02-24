@@ -13,55 +13,56 @@
     <script src="https://kit.fontawesome.com/84a2433f18.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo for Rainydays"></a>
-        <p>search</p>
-        <p>profile</p>
-        <p>favourites</p>
-        <p>shopping cart</p>
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars"></i></label>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="Clothing/Womens/jackets.html">Women's jackets</a>
-            <a href="#">Men's jackets</a>
-            <a href="about.html" class="current">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-      </header>
+  <header>
+    <section>
+      <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo for Rainydays" class="logo"></a>
+    </section>
+    <section class="search">
+      <label for="search"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></label>
+      <input type="text" name="search" id="search" class="search-input">
+    </section>
+    <section class="header-icons">
+      <i class="fa-solid fa-user fa-2xl"></i>
+      <i class="fa-solid fa-heart fa-2xl"></i>
+      <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+    </section>
+    <section class="nav">
+      <input type="checkbox" id="menu-checkbox">
+      <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
+      <label for="menu-checkbox" class="cross-icon"><i class="fa-solid fa-xmark fa-xl"></i></label>
+      <nav>
+        <a href="index.html">Home</li></a>
+        <a href="Clothing/Womens/jackets.html">Women's jackets</li></a>
+        <a href="#">Men's jackets</li></a>
+        <a href="about.html" class="current">About</li></a>
+        <a href="contact.html">Contact</li></a>
+      </nav>
+    </section>
+  </header>  
       <main>
-        <section>
-            <img src="images/preikestolen.jpg" alt="Two people on top of a mountain"/>
-        </section>
-        <section>
-            <h1>About Rainydays</h1>
-            <p>Rainydays started with two girls from Norway who loved to explore the outdoors - by hiking the high mountains during the summer, skiing in the winter, camping by the coast - pushing the comfort zone.</p>
-            <p>They would usually travel around to see as much as possible during their periods off from school and work, and soon realized they were in need of clothing that would fit to more than one type of weather and season of the year. I addition, it couldn’t be so expensive that they wouldn’t be able to afford traveling and exploring. Rainydays was born.</p>
-            <p>Today we sell our jackets all over the world, and have a small office and an outlet located in Oslo, Norway. 
-            </p>
-            <img src="#" alt="slogan: Pushing the comfort zone" />
+        <h1>About Rainydays</h1>
+        <section class="about">
+          <section class="about-image">
+            <img src="images/preikestolen.jpg" alt="Two women on top of mountain">
+          </section>
+          <section class="about-text">
+              <p>Rainydays started with two girls from Norway who loved to explore the outdoors - by hiking the high mountains during the summer, skiing in the winter, camping by the coast - pushing the comfort zone.</p>
+              <p>They would usually travel around to see as much as possible during their periods off from school and work, and soon realized they were in need of clothing that would fit to more than one type of weather and season of the year. I addition, it couldn’t be so expensive that they wouldn’t be able to afford traveling and exploring. Rainydays was born.</p>
+              <p>Today we sell our jackets all over the world, and have a small office and an outlet located in Oslo, Norway. 
+              </p>
+              <img src="images/RainyDays_Slogan.png" alt="slogan: Pushing the comfort zone" class="slogan"/>
+          </section>  
         </section>
       </main>
       <footer>
-        <section>
-          <h2>Follow us</h2>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>TikTok</p>
-        </section>
-        <section>
-          <h2>Contact us</h2>
-          <div>
-            <p>Visit our outlet at</p>
-            <p>Gategata 20</p>
-            <p>0011 Oslo</p>
-          </div>
-          <div>
-            <p>Phone: +47 12345678</p>
-            <p>Email: contact@rainydays.com</p>
-            <p>Office hours: Mon-Fri 09:00-16:00</p>
-          </div>
-        </section>
+        <div>
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+          <i class="fa-brands fa-instagram fa-2xl"></i>
+          <i class="fa-brands fa-tiktok fa-2xl"></i>
+        </div>
+        <div>
+          <a href="contact.html"><h2>Contact us</h2></a>
+        </div>
       </footer>
 </body>
 </html>
