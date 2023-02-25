@@ -25,7 +25,6 @@ header{
     font-size: 1.5em;
     border-radius: 50px;
     border: none;
-
 }
 
 .header-icons {
@@ -89,6 +88,9 @@ nav a {
     text-align: center;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
 
 h1{
     font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
@@ -133,6 +135,12 @@ a {
     border-radius: 50px;
     max-width: 100%;
     font-size: 0.8em;
+}
+
+.cta-button:hover {
+    color: #0A3540;
+    outline: 3px solid;
+    background-color: #a8b8b8;
 }
 
 /* Home page */
@@ -374,7 +382,7 @@ a {
 }
 
 .sale-price{
-    color: #ff0000;
+    color: #ca0000;
     font-size: 2em;
     font-weight: bold;
     margin: 0px;
@@ -407,6 +415,11 @@ a {
 
 .products {
     background-color: #ffffff;
+}
+
+.products:hover, 
+.bestseller:hover {
+    filter: drop-shadow(1px 1px 5px #868686);
 }
 
 
@@ -520,7 +533,7 @@ a {
 }
 
 .free {
-    color: #ff0000;
+    color: #ca0000;
 }
 
 .total {
