@@ -213,7 +213,6 @@ a {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-
 }
 
 .fa-circle{
@@ -236,7 +235,8 @@ a {
     color: #0A3540;
 }
 
-.carousel__frame2, .carousel__frame3{
+.carousel__frame2, 
+.carousel__frame3 {
     display: none;
 }
 
