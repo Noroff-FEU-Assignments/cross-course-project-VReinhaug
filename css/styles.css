@@ -236,6 +236,10 @@ a {
     color: #0A3540;
 }
 
+.carousel__frame2, .carousel__frame3{
+    display: none;
+}
+
 /* Coloured dots */
 
 .ronja-1{
@@ -664,6 +668,10 @@ a {
     }
 
     /* Homepage */
+
+    .main-products-button {
+        margin-top: 12px;
+    }
 
     .banner__text{
         display: block;

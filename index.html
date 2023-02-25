@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="High quality jackets for men and women who like the outdoors." />
+  <meta name="description" content="High quality jackets for men and women who like the outdoors.">
   <title>Home | Rainydays</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Palanquin:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,127 +14,139 @@
 </head> 
 <body>
   <header>
-    <section>
+    <div>
       <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Logo for Rainydays" class="logo"></a>
-    </section>
-    <section class="search">
+    </div>
+    <div class="search">
       <label for="search"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></label>
       <input type="text" name="search" id="search" class="search-input">
-    </section>
-    <section class="header-icons">
+    </div>
+    <div class="header-icons">
       <i class="fa-solid fa-user fa-2xl"></i>
       <i class="fa-solid fa-heart fa-2xl"></i>
       <i class="fa-solid fa-bag-shopping fa-2xl"></i>
-    </section>
-    <section class="nav">
+    </div>
+    <div class="nav">
       <input type="checkbox" id="menu-checkbox">
       <label for="menu-checkbox" class="hamburger-icon"><i class="fa-solid fa-bars fa-xl"></i></label>
       <label for="menu-checkbox" class="cross-icon"><i class="fa-solid fa-xmark fa-xl"></i></label>
       <nav>
-        <a href="index.html" class="current">Home</li></a>
-        <a href="Clothing/Womens/jackets.html">Women's jackets</li></a>
-        <a href="#">Men's jackets</li></a>
-        <a href="about.html">About</li></a>
-        <a href="contact.html">Contact</li></a>
+        <a href="index.html" class="current">Home</a>
+        <a href="Clothing/Womens/jackets.html">Women's jackets</a>
+        <a href="#">Men's jackets</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
-    </section>
+    </div>
   </header>  
   <main>
-    <Section class="main-products">
+    <div class="main-products">
         <div>
           <a href="Clothing/Womens/jackets.html"><img src="images/Hanne_Sether_Lilleberg1.jpeg" alt="Woman wearing the Hanne jacket" class="main-products_image"></a>
-          <a href="Clothing/Womens/jackets.html" class="cta-button">Shop women's jackets</a>
+          <div class="main-products-button">
+            <a href="Clothing/Womens/jackets.html" class="cta-button">Shop women's jackets</a>
+          </div>
         </div>
         <div>
           <a href="#"><img src="images/Magnus_Sether_Lilleberg1.jpeg" alt="Man wearing the Magnus jacket" class="main-products_image"></a>
-          <a href="#" class="cta-button">Shop men's jackets</a>
+          <div class="main-products-button">
+            <a href="#" class="cta-button">Shop men's jackets</a>
+          </div>
         </div>
-    </Section>
+    </div>
     <a href="Clothing/Womens/ronja.html">
-      <section class="banner">
+      <div class="banner">
         <div class="banner__text">
           <p class="banner__text1">Our bestseller Ronja</p>
           <p class="banner__text2">Now on sale!</p>  
         </div>
-      </section>
+      </div>
     </a>
     <section>
       <h1>Share your #Rainydays</h1>
-      <section class="carousel" id="carousel__frame1">
-        <section>
-          <img src="images/Ronja_Kjelstad3.jpeg" alt="Woman camping in the Ronja jacket">
-        </section>
-        <section class="carousel__info">
-          <h2 class="carousel__h2">Ronja</h2>
-          <section class="carousel__product">
-            <div>
-              <img src="images/RainyDays_Jacket2.png" alt="Ronja jacket">
+      <div class="carousel__frame1">
+        <div class="carousel">
+          <i class="fa-solid fa-chevron-left fa-xl"></i>
+          <div>
+            <img src="images/Ronja_Kjelstad3.jpeg" alt="Woman camping in the Ronja jacket">
+          </div>
+          <section class="carousel__info">
+            <h2 class="carousel__h2">Ronja</h2>
+            <div class="carousel__product">
+              <div>
+                <img src="images/RainyDays_Jacket2.png" alt="Ronja jacket">
+              </div>
+              <div class="carousel__color">
+                <i class="fa-solid fa-circle ronja-1"></i>
+                <i class="fa-solid fa-circle ronja-2"></i>
+                <i class="fa-solid fa-circle ronja-3"></i>
+              </div>  
             </div>
-            <div class="carousel__color">
-              <i class="fa-solid fa-circle ronja-1"></i>
-              <i class="fa-solid fa-circle ronja-2"></i>
-              <i class="fa-solid fa-circle ronja-3"></i>
-            </div>  
+            <a href="Clothing/Womens/ronja.html" class="cta-button carousel__button">Shop Ronja</a>
           </section>
-          <a href="Clothing/Womens/ronja.html" class="cta-button carousel__button">Shop Ronja</a>
-        </section>
-        <i class="fa-solid fa-chevron-right fa-xl"></i>
-      </section>
-      <section class="carousel__dots">
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-regular fa-circle"></i>
-        <i class="fa-regular fa-circle"></i>  
-      </section>
-      <section class="carousel" id="carousel__frame2">
-        <i class="fa-solid fa-chevron-left fa-xl"></i>
-        <section>
-          <img src="images/Magnus_Sether_Lilleberg4.jpeg" alt="Man rock climbing in the Magnus jacket">
-        </section>
-        <section class="carousel__info">
-          <h2 class="carousel__h2">Magnus</h2>
-          <section class="carousel__product">
-            <div>
-              <img src="images/RainyDays_Jacket4.png" alt="Magnus jacket">
+          <i class="fa-solid fa-chevron-right fa-xl"></i>
+        </div>
+        <div class="carousel__dots">
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>  
+        </div>  
+      </div>
+      <div class="carousel__frame2">
+        <div class="carousel">
+          <i class="fa-solid fa-chevron-left fa-xl"></i>
+          <div>
+            <img src="images/Magnus_Sether_Lilleberg4.jpeg" alt="Man rock climbing in the Magnus jacket">
+          </div>
+          <section class="carousel__info">
+            <h2 class="carousel__h2">Magnus</h2>
+            <div class="carousel__product">
+              <div>
+                <img src="images/RainyDays_Jacket4.png" alt="Magnus jacket">
+              </div>
+              <div class="carousel__color">
+                <i class="fa-solid fa-circle"></i>
+                <i class="fa-solid fa-circle magnus-1"></i>
+              </div>  
             </div>
-            <div class="carousel__color">
-              <i class="fa-solid fa-circle"></i>
-              <i class="fa-solid fa-circle magnus-1"></i>
-            </div>  
+            <a href="#" class="cta-button carousel__button">Shop Magnus</a>
           </section>
-          <a href="#" class="cta-button carousel__button">Shop Magnus</a>
-        </section>
-        <i class="fa-solid fa-chevron-right fa-xl"></i>
-      </section>
-      <section class="carousel__dots">
-        <i class="fa-regular fa-circle"></i>
-        <i class="fa-solid fa-circle"></i>
-        <i class="fa-regular fa-circle"></i>  
-      </section>
-      <section class="carousel carousel__frame3">
-        <i class="fa-solid fa-chevron-left fa-xl"></i>
-        <section>
-          <img src="images/Cecilie_Feyling2.jpeg" alt="Woman hiking in the Cecilie jacket">
-        </section>
-        <section class="carousel__info">
-          <h2 class="carousel__h2">Cecilie</h2>
-          <section class="carousel__product">
-            <div>
-              <img src="images/RainyDays_Jacket1.png" alt="Cecilie jacket">
+          <i class="fa-solid fa-chevron-right fa-xl"></i>
+        </div>
+        <div class="carousel__dots">
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-solid fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>  
+        </div>    
+      </div>
+      <div class="carousel__frame3">
+        <div class="carousel">
+          <i class="fa-solid fa-chevron-left fa-xl"></i>
+          <div>
+            <img src="images/Cecilie_Feyling2.jpeg" alt="Woman hiking in the Cecilie jacket">
+          </div>
+          <section class="carousel__info">
+            <h2 class="carousel__h2">Cecilie</h2>
+            <div class="carousel__product">
+              <div>
+                <img src="images/RainyDays_Jacket1.png" alt="Cecilie jacket">
+              </div>
+              <div class="carousel__color">
+                <i class="fa-solid fa-circle cecilie-1"></i>
+                <i class="fa-solid fa-circle cecilie-2"></i>
+                <i class="fa-solid fa-circle cecilie-3"></i>
+              </div>  
             </div>
-            <div class="carousel__color">
-              <i class="fa-solid fa-circle cecilie-1"></i>
-              <i class="fa-solid fa-circle cecilie-2"></i>
-              <i class="fa-solid fa-circle cecilie-3"></i>
-            </div>  
+            <a href="Clothing/Womens/jackets.html" class="cta-button carousel__button">Shop Cecilie</a>
           </section>
-          <a href="Clothing/Womens/jackets.html" class="cta-button carousel__button">Shop Cecilie</a>
-        </section>
-      </section>
-      <section class="carousel__dots">
-        <i class="fa-regular fa-circle"></i>
-        <i class="fa-regular fa-circle"></i>  
-        <i class="fa-solid fa-circle"></i>
-      </section>
+          <i class="fa-solid fa-chevron-right fa-xl"></i>
+        </div>
+        <div class="carousel__dots">
+          <i class="fa-regular fa-circle"></i>
+          <i class="fa-regular fa-circle"></i>  
+          <i class="fa-solid fa-circle"></i>
+        </div>  
+      </div>
     </section>
   </main>
   <footer>
