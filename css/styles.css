@@ -131,7 +131,7 @@ a {
     background-color: #0A3540;
     color: #ffffff;
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2vw 4vw;
+    padding: 5px;
     border-radius: 50px;
     max-width: 100%;
     font-size: 0.8em;
@@ -679,6 +679,7 @@ a {
 
     .cta-button{
         font-size: 1.2em;
+        padding: 20px;
     }
 
     /* Homepage */
