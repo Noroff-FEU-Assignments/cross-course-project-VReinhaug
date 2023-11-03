@@ -1,5 +1,5 @@
-function apiError(errorType="success", message = "") {
+function message(messageType="success", message = "") {
 
-    return `<div class="apiError $(errorType)">$(message)</div>`;
+    return `<div class="error $(messageType)">$(message)</div>`;
     
 }
