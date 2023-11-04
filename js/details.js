@@ -1,4 +1,4 @@
-const detailsContainer = document.querySelector(".product-ronja");
+const detailsContainer = document.querySelector(".product-specific");
 
 const queryString = document.location.search;
 
@@ -35,12 +35,21 @@ async function getJacket() {
 getJacket();
 
 function createHtml(details) {
-    detailsContainer.innerHTML =    `<img src=${details.image} alt="Product image"</img>
-                                    <div class="product-ronja-price>
+    detailsContainer.innerHTML = `<section class="product-ronja">
+                                    <img src=${details.image} alt="Product image"/>
+                                    <div class="product-ronja-price">  
                                         <h1>${details.title}</h1>
                                         <div>
-                                            <p>${details.price}</p>
+                                            <p class="price">${details.price}</p>
                                         </div>
-                                    </div>`;
+                                    </div>
+                                    <div class="product-ronja-color">
+                                        <p>Color: ${details.baseColor}</p>
+                                    </div>
+                                    <div class="product-ronja-size">
+                                        <p>Sizes: ${details.sizes}</p>
+                                    </div>
+                                    <p class="product-ronja-text"></p>
+                                </section>`;
     
 }
