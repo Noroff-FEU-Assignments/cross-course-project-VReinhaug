@@ -1,5 +1,5 @@
 function message(messageType="success", message = "") {
 
-    return `<div class="error $(messageType)">$(message)</div>`;
+    return `<div class="error">${message}</div>`;
     
 }

@@ -21,7 +21,7 @@ async function getJackets() {
             }
 
 
-            productContainer.innerHTML +=   `<a href="product-details.html?id=${results[i].id}">
+            productContainer.innerHTML +=   `<a href="../product-details.html?id=${results[i].id}">
                                                 <section class="products">
                                                     <img src="${results[i].image}" alt="${results[i].title}"/>
                                                     <div class="product-name">
@@ -43,7 +43,7 @@ async function getJackets() {
 
     }
     catch(error) {
-        productContainer.innerHTML = message ("error", error);
+        productContainer.innerHTML = message ("error");
         console.log(error);
     }
 

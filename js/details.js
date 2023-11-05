@@ -25,8 +25,7 @@ async function getJacket() {
 
     }
     catch(error) {
-        detailsContainer.innerHTML = message ("error", error);
-        console.log(error);
+        detailsContainer.innerHTML = message ("error");
     }
 
         } 
@@ -49,7 +48,8 @@ function createHtml(details) {
                                     <div class="product-ronja-size">
                                         <p>Sizes: ${details.sizes}</p>
                                     </div>
-                                    <p class="product-ronja-text"></p>
+                                    <a href="../Clothing/checkout.html" class="cta-button product-ronja-button">Add to shopping bag</a>
+                                    <p class="product-ronja-text">${details.description}</p>
                                 </section>`;
     
 }
