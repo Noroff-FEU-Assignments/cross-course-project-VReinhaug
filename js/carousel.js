@@ -9,8 +9,6 @@ async function getSingleJacket() {
 
         const jacket = await response.json();
         
-        console.log(jacket);
-
         createHtml(jacket);
 
     }

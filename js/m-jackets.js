@@ -9,8 +9,6 @@ async function getJackets() {
 
         const results = await response.json();
         
-        console.log(results);
-
         productContainer.innerHTML = "";
 
         for (let i = 0; i < results.length; i++) {
@@ -44,7 +42,6 @@ async function getJackets() {
     }
     catch(error) {
         productContainer.innerHTML = message ("error");
-        console.log(error);
     }
 
 

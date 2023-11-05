@@ -6,11 +6,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-console.log(id);
-
 const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
-
-console.log(url);
 
 async function getJacket() {
 
@@ -19,8 +15,6 @@ async function getJacket() {
 
         const details = await response.json();
         
-        console.log(details);
-
         createHtml(details);
 
     }

@@ -9,8 +9,6 @@ async function getCheckoutJacket() {
 
         const checkoutJacket = await response.json();
         
-        console.log(checkoutJacket);
-
         createHtml(checkoutJacket);
 
     }
