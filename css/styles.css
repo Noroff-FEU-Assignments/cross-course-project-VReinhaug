@@ -120,7 +120,7 @@ footer h2 {
 /* Links */
 a {
     text-decoration: none;
-    color: #000000;
+    color: #0A3540;
 }
 
 .current{
@@ -244,7 +244,9 @@ a {
 }
 
 .carousel__frame2, 
-.carousel__frame3 {
+.carousel__frame3,
+.fa-chevron-right,
+.fa-chevron-left {
     display: none;
 }
 
@@ -569,10 +571,6 @@ a {
 
 .total {
     font-weight: bold;
-}
-
-.login {
-    text-decoration: underline;
 }
 
 .form {
