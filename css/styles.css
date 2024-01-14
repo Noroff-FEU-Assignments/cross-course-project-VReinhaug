@@ -29,7 +29,17 @@ header{
 
 .header-icons {
     grid-area: icons;
+    display: -webkit-inline-box;
     color: #0A3540;   
+}
+
+.shopping-bag span {
+    background-color: #0a3540ba;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-left: -12px;
 }
 
 .fa-2xl {
@@ -481,7 +491,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, auto);
     justify-items: center;
-    margin: 2em auto;
+    margin: 2em;
 }
 
 .product-ronja img {
@@ -569,8 +579,12 @@ a {
     color: #ca0000;
 }
 
-.total {
+.total-price {
     font-weight: bold;
+    background-color: #ffffff;
+    margin: 2em;
+    padding: 1em;
+    text-align: center;
 }
 
 .form {

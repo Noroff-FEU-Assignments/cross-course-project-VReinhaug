@@ -8,6 +8,8 @@ async function getJackets() {
         const response = await fetch(url);
 
         const results = await response.json();
+
+        console.log(results);
         
         productContainer.innerHTML = "";
 
