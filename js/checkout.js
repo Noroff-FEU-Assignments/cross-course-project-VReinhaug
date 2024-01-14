@@ -30,11 +30,10 @@ function displayCartItems() {
 
             cartContainer.appendChild(cartItem);
 
-            // Add the item price to the total
             totalPrice += parseFloat(item.price);
         });
 
-        // Add event listeners to trashcan icons
+        // Add event listener to trashcan icon
         const trashcanIcons = document.querySelectorAll(".trashcan");
         trashcanIcons.forEach((trashcan) => {
             trashcan.addEventListener("click", removeCartItem);
@@ -43,9 +42,8 @@ function displayCartItems() {
         cartContainer.innerHTML = "<p>Your shopping cart is empty.</p>";
     }
 
-    // Display the total price at the bottom
-    totalPriceContainer.innerHTML = `<div class="border"></div>
-                                    <p>Total Price: ${totalPrice.toFixed(2)}</p>`;
+    // Display the total price
+    totalPriceContainer.innerHTML = `<p>Total Price: ${totalPrice.toFixed(2)}</p>`;
 }
 
 function removeCartItem(event) {
@@ -64,5 +62,4 @@ function removeCartItem(event) {
     displayCartItems();
 }
 
-// Call the function to display cart items when the cart page loads
 displayCartItems();

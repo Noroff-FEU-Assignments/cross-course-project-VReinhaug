@@ -52,7 +52,7 @@ function addToShoppingBag(productDetails) {
     // Save the updated cart items back to localStorage
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
-    // Redirect to the cart page
+    // Redirect to the checkout page
     window.location.href = "../Clothing/checkout.html";
 }
 
