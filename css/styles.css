@@ -33,6 +33,7 @@ header{
     color: #0A3540;   
 }
 
+
 .shopping-bag span {
     background-color: #0a3540ba;
     color: white;
@@ -101,6 +102,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 
 h1{
     font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
