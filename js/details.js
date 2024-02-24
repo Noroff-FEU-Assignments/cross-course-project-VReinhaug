@@ -3,11 +3,19 @@ const detailsContainer = document.querySelector(".product-specific");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const url = "https://api.noroff.dev/api/v1/rainy-days/" + id;
 
+// Authentication credentials
+const consumerKey = "ck_6e4154ea477ad3e58d960758f2dac91660d0d8a9";
+const consumerSecret = "cs_17d2c393632a0a320647a43a1195595d7f879bea";
+
+// URL to fetch a specific product
+const baseUrl = "https://www.veronika-codes.one/wp-json/wc/v3/products";
+const productUrl = `${baseUrl}/${id}?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`;
+
+// Functions to fetch product and create HTML
 async function getJacket() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(productUrl);
         const details = await response.json();
         createHtml(details);
         setupAddToBasketButton(details);
@@ -20,18 +28,15 @@ getJacket();
 
 function createHtml(details) {
     detailsContainer.innerHTML = `<section class="product-ronja">
-                                    <img src=${details.image} alt="Product image"/>
+                                    <img src=${details.images[0].src} alt="Product image"/>
                                     <div class="product-ronja-price">  
-                                        <h1>${details.title}</h1>
+                                        <h1>${details.name}</h1>
                                         <div>
                                             <p class="price">${details.price}</p>
                                         </div>
                                     </div>
-                                    <div class="product-ronja-color">
-                                        <p>Color: ${details.baseColor}</p>
-                                    </div>
                                     <a href="javascript:void(0);" class="cta-button product-ronja-button" id="addToBasketButton">Add to shopping bag</a>
-                                    <p class="product-ronja-text">${details.description}</p>
+                                    <div class="product-ronja-text">${details.description}</div>
                                 </section>`;
 }
 
@@ -55,5 +60,3 @@ function addToShoppingBag(productDetails) {
     // Redirect to the checkout page
     window.location.href = "../Clothing/checkout.html";
 }
-
-

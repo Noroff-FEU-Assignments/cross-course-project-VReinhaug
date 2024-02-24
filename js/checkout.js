@@ -4,6 +4,8 @@ const totalPriceContainer = document.querySelector(".total-price");
 function displayCartItems() {
     const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
+    console.log(cartItems)
+
     cartContainer.innerHTML = "";
     let totalPrice = 0;
 
@@ -12,11 +14,10 @@ function displayCartItems() {
             const cartItem = document.createElement("div");
             cartItem.innerHTML = ` <section class="basket">
                                     <div>
-                                        <img src="${item.image}" alt="${item.title}">
+                                        <img src="${item.images[0].src}" alt="Product image">
                                     </div>
                                     <div>
-                                        <h3>${item.title}</h3>
-                                        <p>Colour: ${item.baseColor}</p>
+                                        <h3>${item.name}</h3>
                                     </div>
                                     <i class="fa-solid fa-trash-can fa-2xl trashcan" data-index="${index}"></i>
                                     <div class="border"></div>
