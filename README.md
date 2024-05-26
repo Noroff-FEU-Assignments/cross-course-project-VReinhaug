@@ -22,7 +22,6 @@ The website is responsive across devices and it is fetching products from a Word
 - About
 - Contact
 
-
 ## Built with
 
 - HTML
@@ -35,9 +34,10 @@ The website is responsive across devices and it is fetching products from a Word
 ### Installing
 
 It is easy for you to get this project started:
+
 1. Clone the repository:
 
-```bash 
+```bash
 git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-VReinhaug
 ```
 
@@ -48,6 +48,7 @@ npm install
 ```
 
 ### Running
+
 To run the app, run the following command:
 
 ```
