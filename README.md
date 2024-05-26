@@ -1,6 +1,6 @@
 # Cross course project – RainyDays
 
-![screenshot of rainydays website] (images/assets/screenshot.png)
+![screenshot of rainydays website](images/assets/screenshot.png)
 
 RainyDays is an online store selling rain jackets to men and women.
 
@@ -56,4 +56,4 @@ npm run start
 ```
 
 ##Contact
-For any feedback or questions, please contact me [on LinkedIn] (https://www.linkedin.com/in/veronika-reinhaug/).
+For any feedback or questions, please contact me [on LinkedIn](https://www.linkedin.com/in/veronika-reinhaug/).
