@@ -55,5 +55,5 @@ To run the app, run the following command:
 npm run start
 ```
 
-##Contact
+## Contact
 For any feedback or questions, please contact me [on LinkedIn](https://www.linkedin.com/in/veronika-reinhaug/).
